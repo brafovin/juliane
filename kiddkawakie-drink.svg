@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <title>kiddkawakie Getränk</title>
+
+  <defs>
+    <!-- Flüssigkeit Gradient -->
+    <linearGradient id="liquid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff6a00"/>
+      <stop offset="50%" stop-color="#ff1744"/>
+      <stop offset="100%" stop-color="#b71c1c"/>
+    </linearGradient>
+
+    <!-- Flaschen Highlight -->
+    <linearGradient id="bottleShine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.45"/>
+      <stop offset="25%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="75%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <!-- Etikett Hintergrund -->
+    <linearGradient id="labelBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff9c4"/>
+      <stop offset="100%" stop-color="#ffeb3b"/>
+    </linearGradient>
+
+    <!-- Kronkorken -->
+    <radialGradient id="cap" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#78909c"/>
+      <stop offset="100%" stop-color="#263238"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect width="400" height="600" fill="#e3f2fd"/>
+  <circle cx="200" cy="300" r="220" fill="#bbdefb" opacity="0.5"/>
+
+  <!-- Tisch / Untergrund -->
+  <ellipse cx="200" cy="560" rx="140" ry="14" fill="#000" opacity="0.15"/>
+
+  <!-- Flasche: Körper -->
+  <path d="M 140 180
+           Q 140 150 160 140
+           L 160 110
+           Q 160 100 170 100
+           L 230 100
+           Q 240 100 240 110
+           L 240 140
+           Q 260 150 260 180
+           L 260 520
+           Q 260 550 230 550
+           L 170 550
+           Q 140 550 140 520 Z"
+        fill="#1b5e20" stroke="#0d3311" stroke-width="2"/>
+
+  <!-- Flüssigkeit im Innern (durch den Hals sichtbar) -->
+  <path d="M 148 200
+           L 148 518
+           Q 148 542 170 542
+           L 230 542
+           Q 252 542 252 518
+           L 252 200 Z"
+        fill="url(#liquid)"/>
+
+  <!-- Glas-Highlight -->
+  <path d="M 140 180
+           Q 140 150 160 140
+           L 160 110
+           Q 160 100 170 100
+           L 230 100
+           Q 240 100 240 110
+           L 240 140
+           Q 260 150 260 180
+           L 260 520
+           Q 260 550 230 550
+           L 170 550
+           Q 140 550 140 520 Z"
+        fill="url(#bottleShine)"/>
+
+  <!-- Kronkorken -->
+  <rect x="160" y="85" width="80" height="22" rx="3" fill="url(#cap)"/>
+  <g fill="#455a64">
+    <rect x="163" y="87" width="2" height="18"/>
+    <rect x="170" y="87" width="2" height="18"/>
+    <rect x="177" y="87" width="2" height="18"/>
+    <rect x="184" y="87" width="2" height="18"/>
+    <rect x="191" y="87" width="2" height="18"/>
+    <rect x="198" y="87" width="2" height="18"/>
+    <rect x="205" y="87" width="2" height="18"/>
+    <rect x="212" y="87" width="2" height="18"/>
+    <rect x="219" y="87" width="2" height="18"/>
+    <rect x="226" y="87" width="2" height="18"/>
+    <rect x="233" y="87" width="2" height="18"/>
+  </g>
+
+  <!-- Etikett -->
+  <rect x="150" y="260" width="100" height="200" rx="6" fill="url(#labelBg)" stroke="#f57f17" stroke-width="3"/>
+  <rect x="156" y="266" width="88" height="188" rx="4" fill="none" stroke="#f57f17" stroke-width="1"/>
+
+  <!-- Etikett Inhalt -->
+  <text x="200" y="295" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#c62828" font-style="italic">~ Original ~</text>
+
+  <text x="200" y="330" text-anchor="middle" font-family="Impact, 'Arial Black', sans-serif" font-size="22" fill="#c62828" font-weight="900">KIDD</text>
+  <text x="200" y="355" text-anchor="middle" font-family="Impact, 'Arial Black', sans-serif" font-size="22" fill="#c62828" font-weight="900">KAWAKIE</text>
+
+  <line x1="165" y1="370" x2="235" y2="370" stroke="#c62828" stroke-width="1.5"/>
+
+  <text x="200" y="392" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#5d4037">Premium Limonade</text>
+  <text x="200" y="405" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#5d4037">mit Kirschgeschmack</text>
+
+  <!-- Stern -->
+  <polygon points="200,418 203,427 212,427 205,433 208,442 200,436 192,442 195,433 188,427 197,427"
+           fill="#c62828"/>
+
+  <text x="200" y="450" text-anchor="middle" font-family="Georgia, serif" font-size="8" fill="#5d4037">0,33 L • seit 2026</text>
+
+  <!-- Unterschrift -->
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#37474f" font-style="italic">kiddkawakie — erfrischend anders</text>
+</svg>
